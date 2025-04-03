@@ -3,6 +3,30 @@
   box-sizing: border-box;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding-bottom: 80px; /* Prevents content from being overlapped by the footer */
+}
+
 body {
-  background: linear-gradient(to right, #72ff8a, #b3ffb6, #f3c1c1);
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, #ff29ed, #92fe9d);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
