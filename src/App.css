@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #72ff8a, #b3ffb6, #f3c1c1);
+}
